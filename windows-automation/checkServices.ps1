@@ -18,7 +18,7 @@
 # ==============================
 # CONFIGURATION
 # ==============================
-$apiKey = "274bd8f0c89c88bba0336e4c953598953f63b9cb880e7cb28377d3e52b899c83"
+$apiKey = "<VirusTotal-API-Key>"
 $VTUrl = "https://www.virustotal.com/api/v3/files/"
 $Headers = @{ "x-apikey" = $ApiKey }
 $ExportPath = "ServiceScanResults.csv"
