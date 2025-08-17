@@ -22,9 +22,15 @@ AutomationScripts/
 ### 🔹 Windows Automation
 
 - **checkServices.ps1**
+
   - Scans running services on a Windows system.
   - Cross-checks service executables against VirusTotal.
   - Useful for identifying potentially malicious services.
+
+- **startupPrograms.ps1**
+  - Lists all startup programs on Windows.
+  - Extracts registry + startup folder entries.
+  - Helps detect unwanted or malicious autostart items.
 
 ### 🔹 Miscellaneous Security
 
@@ -55,7 +61,6 @@ Scripts focused on Active Directory, Windows security, and system monitoring.
 - **checkADGroups.ps1** → List AD groups with high privileges (Domain Admins, Enterprise Admins)
 - **passwordExpiryReport.ps1** → Get all users with passwords expiring in X days
 - **riskyShares.ps1** → Enumerate SMB shares with Everyone/Anonymous access
-- **startupPrograms.ps1** → List autorun entries that could be persistence mechanisms
 
 ---
 
