@@ -10,7 +10,8 @@ This repository is designed as a personal toolkit for everyday tasks, system adm
 ```
 AutomationScripts/
 ├── windows-automation/
-│ └── checkServices.ps1 # PowerShell script to check running services against VirusTotal
+│ ├── checkServices.ps1 # PowerShell script to check running services against VirusTotal
+│ └── checkADUsers.ps1 # PowerShell script to list all the AD users
 ├── linux-automation/ # (Coming soon) Linux automation scripts
 ├── api-integrations/ # (Coming soon) API integration scripts
 ├── miscellaneous-security/
@@ -31,6 +32,11 @@ AutomationScripts/
   - Lists all startup programs on Windows.
   - Extracts registry + startup folder entries.
   - Helps detect unwanted or malicious autostart items.
+
+- **checkADUsers.ps1**
+  - Identifies Disabled accounts (stale accounts that should potentially be deleted).
+  - Identifies Inactive accounts (active accounts that haven't logged in for 90+ days).
+  - Calculates real-time status and exports a clean, deduplicated CSV for administrative review.
 
 ### 🔹 Miscellaneous Security
 
@@ -57,7 +63,6 @@ AutomationScripts/
 
 Scripts focused on Active Directory, Windows security, and system monitoring.
 
-- **checkADUsers.ps1** → Pull all AD users, highlight disabled/inactive accounts
 - **checkADGroups.ps1** → List AD groups with high privileges (Domain Admins, Enterprise Admins)
 - **passwordExpiryReport.ps1** → Get all users with passwords expiring in X days
 - **riskyShares.ps1** → Enumerate SMB shares with Everyone/Anonymous access
