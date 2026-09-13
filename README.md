@@ -12,7 +12,8 @@ AutomationScripts/
 ├── windows-automation/
 │ ├── checkServices.ps1 # PowerShell script to check running services against VirusTotal
 │ └── checkADUsers.ps1 # PowerShell script to list all the AD users
-├── linux-automation/ # (Coming soon) Linux automation scripts
+├── linux-automation/
+│   └── check_git_repos.sh  # Bash script to audit Git repositories & uncommitted changes
 ├── api-integrations/ # (Coming soon) API integration scripts
 ├── miscellaneous-security/
 │ └── portScanner.py # Python-based TCP port scanner with customizable arguments
@@ -73,6 +74,11 @@ Scripts focused on Active Directory, Windows security, and system monitoring.
 
 Bash/Python utilities for Linux security and hardening.
 
+- **check_git_repos.sh**
+  - Scans lab directories (`~/appsec-lab` or custom paths) for valid Git repositories.
+  - Correctly handles submodules, bare repositories, and Git worktrees.
+  - Flags dirty working trees (uncommitted/untracked changes).
+  - Supports recursive discovery (`-r`/`--recursive`).
 - **checkRunningProcesses.sh** → Compare processes against VirusTotal/Hybrid Analysis
 - **sshBruteForceCheck.sh** → Parse `auth.log` for brute-force attempts and block IPs (fail2ban-lite)
 - **patchStatus.sh** → Check if critical packages are outdated
