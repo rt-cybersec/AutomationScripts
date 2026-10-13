@@ -16,7 +16,8 @@ AutomationScripts/
 │   └── check_git_repos.sh  # Bash script to audit Git repositories & uncommitted changes
 ├── api-integrations/ # (Coming soon) API integration scripts
 ├── miscellaneous-security/
-│ └── portScanner.py # Python-based TCP port scanner with customizable arguments
+│ ├── portScanner.py # Python-based TCP port scanner with customizable arguments
+│ └── trufflehog-triage.py # Triage TruffleHog JSON reports — breakdown by detector, path, table & drill-down
 ```
 
 ## ⚡ Current Scripts
